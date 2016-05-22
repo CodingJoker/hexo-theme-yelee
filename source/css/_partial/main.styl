@@ -33,6 +33,20 @@
                     margin: 3px;
                 }
             }
+            hgroup{
+              .total-word-count{
+                margin-bottom:5px;
+                width:100%;
+                height:20px;
+                font-size:20px;
+                line-height:20px;
+                text-align:center;
+                .post-count{
+                  color:#928D8D;
+                  font-size:15px;
+                }
+              }
+            }
         }
     }
     .left-col {
@@ -70,7 +84,7 @@
     }
 
     @media screen and (max-width:1040px) {
-        
+
     }@media screen and (max-width:800px) {
         @import "_partial/mobile"
     }
@@ -119,7 +133,7 @@
             border: 5px solid #88acdb;
             box-shadow: 0 0 1.5em #88acdb;
             animation: profilepic .15s linear infinite alternate;
-            -webkit-animation: profilepic .15s linear infinite alternate; 
+            -webkit-animation: profilepic .15s linear infinite alternate;
         }
         @keyframes profilepic {
             0% {
@@ -221,6 +235,20 @@
         text-align: left;
         line-height: 30px;
     }
+    hgroup{
+      .total-word-count{
+        margin-bottom:5px;
+        width:100%;
+        height:20px;
+        font-size:20px;
+        line-height:20px;
+        text-align:center;
+        .post-count{
+          color:#928D8D;
+          font-size:15px;
+        }
+      }
+    }
 }
 
 @require "customise/social-icon"
@@ -271,7 +299,7 @@
             color: rgba(255, 255, 255, .8);
         }
         &:hover {
-            background: rgba(147, 181, 224, .3) !important; 
+            background: rgba(147, 181, 224, .3) !important;
             .fa {
                 color: white;
             }
@@ -300,7 +328,7 @@
     -webkit-appearance: none;
     &:hover {
         color: #88acdb;
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -345,7 +373,7 @@ if hexo-config("github_widget")
     .article-entry .github-widget
         h3::after
             content none
-        .github-box 
+        .github-box
             font-size (13/16)rem
             .github-box-title
                 h3
@@ -369,14 +397,14 @@ if hexo-config("jquery_ui")
 
     body .ui-tooltip
         border 1px solid white
-        
+
 
 if hexo-config("progressBar.on") && hexo-config("progressBar.type") == "minimal"
         bar-color = hexo-config("progressBar.color")
         if bar-color == "blue"
             .pace .pace-progress
                 background #77b6ff
-                box-shadow 0 0 10px rgba(@background, .7) 
+                box-shadow 0 0 10px rgba(@background, .7)
 
 .article-entry ul > li,
 .share,

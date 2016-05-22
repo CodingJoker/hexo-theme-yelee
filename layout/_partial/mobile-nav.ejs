@@ -10,6 +10,9 @@
             </a>
             <hgroup>
               <h1 class="header-author"><a href="<%= config.root %>" title="回到主页"><%=theme.author%></a></h1>
+              <div class="total-word-count">
+              <span class="post-count">这货已写了 <%= totalcount(site) %> 个字了</span>
+              </div>
             </hgroup>
             <% if (theme.subtitle){ %>
             <p class="header-subtitle"><%=theme.subtitle%></p>
@@ -29,7 +32,7 @@
                             <%}%>
                         </ul>
             </nav>
-        </header>                
+        </header>
     </div>
     <link class="menu-list" tags="<%= __('index.tags') %>" friends="<%= __('index.friends') %>" about="<%= __('index.about') %>"/>
 </nav>

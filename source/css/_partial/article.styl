@@ -301,7 +301,7 @@
 #article-nav-older {
     padding-right: 1em;
     text-align: right;
-    &::after { 
+    &::after {
         padding-left:0.5em;
         content:"→";
         color: white;
@@ -313,7 +313,7 @@
 #article-nav-newer {
     padding-left: 1em;
     text-align: left;
-    &::before { 
+    &::before {
         padding-right:0.5em;
         content:"←";
         color: white;
@@ -385,7 +385,7 @@ li:hover {
         color: gray;
         &:visited {
             color: rgba(244, 131, 133, 1);
-        } 
+        }
         &:hover {
             color: #88acdb;
             text-decoration: none;
@@ -413,16 +413,16 @@ li:hover {
     }
     .toc-child {
         padding-left: 1.25em;
-        margin: 4px 0; 
+        margin: 4px 0;
     }
     .toc-link:hover {
         background: rgba(158, 188, 226, .21);
     }
 }
 if hexo-config("toc_nowrap")
-    #toc .toc-link 
+    #toc .toc-link
         display inline-block
-        width 100% 
+        width 100%
         text-overflow ellipsis
         white-space nowrap
         overflow-x hidden
@@ -461,4 +461,17 @@ if hexo-config("toc_nowrap")
             cursor: pointer;
         }
     }
+}
+.ui-tooltip {
+  padding: 6px;
+  max-width: 30em;
+  -webkit-box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
+  box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
+  color: #fff;
+  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 0.9em;
+  background: rgba(0,0,0,0.65);
+}
+body .ui-tooltip {
+  border: 1px solid #fff;
 }

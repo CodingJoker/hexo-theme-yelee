@@ -45,10 +45,10 @@
   <link href="<%- theme.CDN.fontawesome %>" rel="stylesheet">
   <link rel="apple-touch-icon" href="<%- theme.root_url %>/apple-touch-icon.png">
   <% if (is_home()){ %>
-    <% if (theme.baidu_site) { %> 
+    <% if (theme.baidu_site) { %>
       <meta name="baidu-site-verification" content="<%- theme.baidu_site %>" />
     <% } %>
-    <% if (theme.google_site) { %> 
+    <% if (theme.google_site) { %>
       <meta name="google-site-verification" content="<%- theme.google_site %>" />
     <% } %>
   <% } %>
@@ -91,9 +91,12 @@
           (function() {
               var hm = document.createElement("script");
               hm.src = "//hm.baidu.com/hm.js?<%=theme.baidu_tongji%>";
-              var s = document.getElementsByTagName("script")[0]; 
+              var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(hm, s);
           })();
       </script>
   <% } %>
+<script src="//cdn.bootcss.com/offline-js/0.7.14/offline.min.js"></script>
+<link href="//cdn.bootcss.com/offline-js/0.7.14/themes/offline-language-english.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/offline-js/0.7.14/themes/offline-theme-chrome.css" rel="stylesheet">
 </head>
